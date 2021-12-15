@@ -77,9 +77,9 @@
 		3FD6A46B276299210030FFA3 /* Practicando */ = {
 			isa = PBXGroup;
 			children = (
-				3FA3045F27659EC600AB42D5 /* Home */,
 				3FD6A46C276299210030FFA3 /* AppDelegate.swift */,
 				3FD6A46E276299210030FFA3 /* SceneDelegate.swift */,
+				3FA3045F27659EC600AB42D5 /* Home */,
 				3FD6A475276299230030FFA3 /* Assets.xcassets */,
 				3FD6A477276299230030FFA3 /* LaunchScreen.storyboard */,
 				3FD6A47A276299230030FFA3 /* Info.plist */,

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 
 protocol HomeViewProtocol: class {
@@ -14,7 +15,7 @@ protocol HomeViewProtocol: class {
 
 
 protocol HomeRouterProtocol: class{
-    
+    static func build() -> UIViewController
 }
 
 

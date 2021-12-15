@@ -11,6 +11,6 @@ class HomeInteractor: HomeInteractorInputProtocol {
     weak var presenter: HomeInteractorOutputProtocol?
 }
 
-//extension HomeInteractor: HomeInteractorInputProtocol {
-//
-//}
+extension HomeInteractor: HomeInteractorOutputProtocol {
+    //Implementar casos de uso
+}

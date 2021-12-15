@@ -11,11 +11,11 @@ import Foundation
 class HomePresenter {
     
     weak var view: HomeViewProtocol?
-    var interactor: HomeInteractorProtocol?
+    var interactor: HomeInteractorInputProtocol?
     var router: HomeRouterProtocol?
     
     
-    init(interactor: HomeInteractorProtocol, router: HomeRouterProtocol) {
+    init(interactor: HomeInteractorInputProtocol, router: HomeRouterProtocol) {
         self.interactor = interactor
         self.router = router
     }
@@ -26,4 +26,7 @@ extension HomePresenter: HomePresenterProtocol{
     func viewDidLoad() {
         print("Me ha llamado la vista")
     }
+}
+extension HomePresenter: HomeInteractorOutputProtocol{
+    
 }
