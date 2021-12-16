@@ -17,17 +17,15 @@ class HomeRouter: HomeRouterProtocol{
         self.viewController = view
     }
     
-    class func build() -> UIViewController{
-        let storyboard = UIStoryboard.init(name: "Main", bundle: Bundle.main)
-        let view = storyboard.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
-        
+    class func build() -> UIViewController {
+        let storyboard = UIStoryboard.init(name: "HomeView", bundle: Bundle.main)
+        let view = storyboard.instantiateViewController(withIdentifier: "homeView") as! HomeViewController
         let interactor = HomeInteractor()
         let router = HomeRouter(view: view)
         let presenter = HomePresenter(interactor: interactor, router: router)
         
         view.presenter = presenter
         interactor.presenter = presenter
-        
         presenter.router = router
         presenter.view = view
         presenter.interactor = interactor

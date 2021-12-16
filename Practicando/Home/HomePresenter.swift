@@ -22,9 +22,9 @@ class HomePresenter {
     
 }
 
-extension HomePresenter: HomePresenterProtocol{
+extension HomePresenter: HomePresenterProtocol {
     func viewDidLoad() {
-        print("Me ha llamado la vista")
+        print("Me llamó la vista")
     }
 }
 extension HomePresenter: HomeInteractorOutputProtocol{

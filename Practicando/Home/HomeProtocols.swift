@@ -9,17 +9,18 @@ import Foundation
 import UIKit
 
 
-protocol HomeViewProtocol: class {
+protocol HomeViewProtocol: AnyObject {
+    // Presenter -> View
     var presenter: HomePresenterProtocol? { get set }
 }
 
 
-protocol HomeRouterProtocol: class{
+protocol HomeRouterProtocol: AnyObject{
+    //Presenter -> Router
     static func build() -> UIViewController
 }
 
-
-protocol HomePresenterProtocol: class{
+protocol HomePresenterProtocol: AnyObject{
     //View ---->> Presenter
     var view: HomeViewProtocol? { get set }
     var router: HomeRouterProtocol? { get set }
@@ -28,11 +29,11 @@ protocol HomePresenterProtocol: class{
     func viewDidLoad() -> Void
 }
 
-protocol HomeInteractorOutputProtocol: class {
-// INTERACTOR -> PRESENTER
+protocol HomeInteractorOutputProtocol: AnyObject {
+    // INTERACTOR -> PRESENTER
 }
 
-protocol HomeInteractorInputProtocol: class {
+protocol HomeInteractorInputProtocol: AnyObject {
     // PRESENTER -> INTERACTOR
     var presenter: HomeInteractorOutputProtocol? { get set }
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F40A77E276BC30B00D147A3 /* HomeView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F40A77D276BC30B00D147A3 /* HomeView.storyboard */; };
 		3F955118276795850007F89F /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F955117276795850007F89F /* HomeProtocols.swift */; };
 		3FD6A46D276299210030FFA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD6A46C276299210030FFA3 /* AppDelegate.swift */; };
 		3FD6A46F276299210030FFA3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD6A46E276299210030FFA3 /* SceneDelegate.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F40A77D276BC30B00D147A3 /* HomeView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeView.storyboard; sourceTree = "<group>"; };
 		3F955117276795850007F89F /* HomeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
 		3FD6A469276299210030FFA3 /* Practicando.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Practicando.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FD6A46C276299210030FFA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -48,7 +50,7 @@
 		3FA3045F27659EC600AB42D5 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				3FD6A472276299210030FFA3 /* Main.storyboard */,
+				3F40A77D276BC30B00D147A3 /* HomeView.storyboard */,
 				3FD6A470276299210030FFA3 /* HomeViewController.swift */,
 				3FFE140A2765A10D0029D823 /* HomeInteractor.swift */,
 				3FFE14082765A0D20029D823 /* HomePresenter.swift */,
@@ -81,6 +83,7 @@
 				3FD6A46E276299210030FFA3 /* SceneDelegate.swift */,
 				3FA3045F27659EC600AB42D5 /* Home */,
 				3FD6A475276299230030FFA3 /* Assets.xcassets */,
+				3FD6A472276299210030FFA3 /* Main.storyboard */,
 				3FD6A477276299230030FFA3 /* LaunchScreen.storyboard */,
 				3FD6A47A276299230030FFA3 /* Info.plist */,
 			);
@@ -147,6 +150,7 @@
 			files = (
 				3FD6A479276299230030FFA3 /* LaunchScreen.storyboard in Resources */,
 				3FD6A476276299230030FFA3 /* Assets.xcassets in Resources */,
+				3F40A77E276BC30B00D147A3 /* HomeView.storyboard in Resources */,
 				3FD6A474276299210030FFA3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         
-        //Inicializar el modulo de viper y mostrar una ventana con el ViewController
+        //Inicializar el modulo de viper y mostrar una ventana con este ViewController
         let homeView = HomeRouter.build()
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = homeView

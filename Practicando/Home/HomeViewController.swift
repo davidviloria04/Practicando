@@ -8,11 +8,8 @@
 import Foundation
 import UIKit
 
-
-
 class HomeViewController: UIViewController {
     
-
     var presenter: HomePresenterProtocol?
 
     override func viewDidLoad() {
